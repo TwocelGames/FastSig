@@ -6,12 +6,12 @@
 
 		"ReplicatedStorage": {
 			"$className": "ReplicatedStorage",
-			"FastSig": {
-				"$path": "src"
-			},
 			"Packages": {
 				"$className": "Folder",
-				"$path": "Packages"
+				"$path": "Packages",
+				"FastSig": {
+					"$path": "src"
+				}
 			}
 
 		}
