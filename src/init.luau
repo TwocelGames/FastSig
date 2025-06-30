@@ -7,7 +7,7 @@ local types = require(script:WaitForChild("types"))
 
 export type Signal<T...> = types.Signal<T...>
 
-local FastTask = require(game.ReplicatedStorage.Packages.FastTasks)
+local FastTask = require(script.Parent.FastTasks)
 
 local newThread = (config.RUN_SIGNALS_IMMEDIATLY and FastTask.spawn) or FastTask.defer
 local resumeThread: any = (config.RUN_SIGNALS_IMMEDIATLY and task.spawn) or task.defer
